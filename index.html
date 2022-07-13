@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Bushy0</title>
+    <link rel="icon" href="/images/LogoTitle.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="none">
+        <img src="/images/IG.png" width="808px" height="108px">
+    </div>
+
+</body>
+
+
+<script>
+    const spin = document.querySelector('.none');
+
+    function showSpin() {
+        spin.classList.add('animate')
+
+        function stopSpin() {
+            spin.classList.remove('animate')
+        }
+
+        setTimeout(
+            stopSpin, 2000);
+
+    }
+
+    setInterval(
+        showSpin, 5000);
+</script>
+
+</html>

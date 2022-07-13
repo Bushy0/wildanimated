@@ -1,0 +1,15 @@
+.animate {
+    display: block;
+    animation-name: slide;
+    animation-duration: 1000ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    position: absolute;
+}
+
+
+@keyframes slide {
+    50% {
+        transform: scale(20%);
+    }
+}
