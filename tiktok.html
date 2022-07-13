@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <title>index</title>
+    <title>Tiktok Animated</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./style.css">
     <!-- Boxiocns CDN Link -->
@@ -14,9 +14,29 @@
 </head>
 
 <body>
-    <div>
-        <h1>this is the index page</h1>
+    <div class="none">
+        <img src="./images/TT.png" width="808px" height="108px">
     </div>
 </body>
+
+
+<script>
+    const spin = document.querySelector('.none');
+
+    function showSpin() {
+        spin.classList.add('animate')
+
+        function stopSpin() {
+            spin.classList.remove('animate')
+        }
+
+        setTimeout(
+            stopSpin, 2000);
+
+    }
+
+    setInterval(
+        showSpin, 5000);
+</script>
 
 </html>
